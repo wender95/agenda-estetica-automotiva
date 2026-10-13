@@ -1,7 +1,7 @@
-# Agenda StetPar
+# Agenda para estética automotiva
 
-**Agenda, financeiro, caixa e contas a pagar para uma estética automotiva.** Em produção na
-internet em `stetpar.rastros.cloud` e preparado para ser vendido como produto, por mensalidade.
+**Agenda, financeiro, caixa e contas a pagar para uma estética automotiva.** Em produção
+na internet, usado pela equipe da loja, e preparado para ser vendido como produto, por mensalidade.
 
 Kotlin · Spring Boot 3 · React 18 · TypeScript · H2 / PostgreSQL · Flyway · JWT · Server-Sent Events · Cloudflare Tunnel
 
@@ -9,6 +9,14 @@ Kotlin · Spring Boot 3 · React 18 · TypeScript · H2 / PostgreSQL · Flyway �
 > código-fonte é fechado, porque o sistema é vendido como produto. Os prints usam dados fictícios.
 
 ![Agenda do mês, com os serviços coloridos pela forma de pagamento](imagens/agenda.png)
+
+## Meu papel
+
+Conduzi o projeto de ponta a ponta: levantei com o dono e a equipe como a agenda e o
+dinheiro circulavam, defini as regras de negócio (o que é forma de recebimento, como uma
+parcela vira despesa, quem enxerga o quê), acompanhei a implantação na loja e ajustei o
+sistema com o uso. O desenvolvimento foi feito com IA (Claude Code), com as regras garantidas
+por testes automatizados.
 
 ## O problema
 
@@ -58,8 +66,8 @@ na mão. As contas a pagar ficavam fora de tudo isso.
 
 ## Em produção
 
-Roda no servidor Windows da empresa como serviço, ao lado do [RastrOS](https://github.com/wender95/rastros),
-e é publicado em `stetpar.rastros.cloud` por um Cloudflare Tunnel: HTTPS, nenhuma porta aberta
+Roda num servidor Windows da empresa, como serviço, e é publicado na internet por um
+Cloudflare Tunnel: HTTPS, nenhuma porta aberta
 no roteador. Tela, API e banco saem de um único `.jar`.
 
 ## Qualidade
