@@ -1,7 +1,7 @@
 # Agenda para estética automotiva
 
-**Agenda, financeiro, caixa e contas a pagar para uma estética automotiva.** Em produção
-na internet, usado pela equipe da loja, e preparado para ser vendido como produto, por mensalidade.
+**Agenda, financeiro, caixa e contas a pagar para uma estética automotiva.** Feito sob
+demanda e preparado para ser vendido como produto, por mensalidade.
 
 Kotlin · Spring Boot 3 · React 18 · TypeScript · H2 / PostgreSQL · Flyway · JWT · Server-Sent Events · Cloudflare Tunnel
 
@@ -14,8 +14,7 @@ Kotlin · Spring Boot 3 · React 18 · TypeScript · H2 / PostgreSQL · Flyway �
 
 Conduzi o projeto de ponta a ponta: levantei com o dono e a equipe como a agenda e o
 dinheiro circulavam, defini as regras de negócio (o que é forma de recebimento, como uma
-parcela vira despesa, quem enxerga o quê), acompanhei a implantação na loja e ajustei o
-sistema com o uso. O desenvolvimento foi feito com IA (Claude Code), com as regras garantidas
+parcela vira despesa, quem enxerga o quê), e acompanhei a implantação. O desenvolvimento foi feito com IA (Claude Code), com as regras garantidas
 por testes automatizados.
 
 ## O problema
@@ -64,7 +63,7 @@ na mão. As contas a pagar ficavam fora de tudo isso.
   para o servidor em seguida, numa fila por item. No caixa, cada ação espera a resposta,
   porque dinheiro não pode aparecer na tela antes de estar gravado.
 
-## Em produção
+## Como roda
 
 Roda num servidor Windows da empresa, como serviço, e é publicado na internet por um
 Cloudflare Tunnel: HTTPS, nenhuma porta aberta
